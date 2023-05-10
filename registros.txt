@@ -1,0 +1,5 @@
+Nombre: 
+Apellido: 
+Documento: 
+Eps: 
+tipo de sangre: 

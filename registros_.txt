@@ -1,0 +1,15 @@
+Nombre: Juan 
+Apellido: Diego
+Documento: Cala
+Eps: sistemas
+tipo de sangre: primer
+Nombre: juan 
+Apellido: diego
+Documento: 32349
+Eps: sistemas
+tipo de sangre: segundo
+Nombre: juan
+Apellido: diego
+Documento: 10439954
+Eps: capresoac
+tipo de sangre: o+
