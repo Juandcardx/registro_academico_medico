@@ -5,10 +5,10 @@ from tkinter import messagebox
 # funciones de la app
 # -------------------------
 
-def guardar_registro(nombre, apellido, codigo, carrera, semestre):
+def guardar_registro_academico(nombre, apellido, codigo, carrera, semestre):
     datos = f"Nombre: {nombre}\nApellido: {apellido}\nCódigo: {codigo}\nCarrera: {carrera}\nSemestre: {semestre}\n"
 
-    with open("C:/Registros", "registros.txt", "a") as archivo:
+    with open("registros_academicos.txt", "a") as archivo:
         archivo.write(datos) 
 
 def regristrar_toplevel_acedemi():
@@ -81,7 +81,7 @@ def regristrar_toplevel_acedemi():
         carrera_valor = entry_car.get()
         semestre_valor = entry_sem.get()
 
-        guardar_registro(nombre_valor, apellido_valor, codigo_valor, carrera_valor, semestre_valor)
+        guardar_registro_academico(nombre_valor, apellido_valor, codigo_valor, carrera_valor, semestre_valor)
         messagebox.showinfo("Registro exitoso", "Los datos se han guardado correctamente.")
 
     bt_aceptar = Button(toplevel_academidats, text="Enter", command=guardar_datos)
@@ -89,12 +89,12 @@ def regristrar_toplevel_acedemi():
 
 #-------------------------------------------------------------------------------------------------------------------
 
-def guardar_registro(nombre, apellido, documento, Eps,sangre ):
+def guardar_registro_medico(nombre, apellido, documento, Eps,sangre ):
     datos = f"Nombre: {nombre}\nApellido: {apellido}\nDocumento: {documento}\nEps: {Eps}\ntipo de sangre: {sangre}\n"
     
     
 
-    with open("registros_.txt", "a") as archivo:
+    with open("registros_médicos.txt", "a") as archivo:
         archivo.write(datos)
 
 def regristrar_toplevel_medic():
@@ -206,7 +206,7 @@ def regristrar_toplevel_medic():
         Eps_valor = entry_car.get()
         sangre_valor = entry_sem.get()
 
-        guardar_registro(nombre_valor, apellido_valor, doc_valor, Eps_valor, sangre_valor)
+        guardar_registro_medico(nombre_valor, apellido_valor, doc_valor, Eps_valor, sangre_valor)
         messagebox.showinfo("Registro exitoso", "Los datos se han guardado correctamente.")
 
     bt_aceptar = Button(toplevel_medidats, text="Enter", command=guardar_datos)
